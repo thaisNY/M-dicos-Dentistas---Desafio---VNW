@@ -40,8 +40,84 @@
         font-weight: 500;
         font-size: 20px;
         color: #000000;
-
-       
     }
 
+    .hamburgerBtn{
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .mobileMenu{
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 250px;
+        height: calc(100vh - 100px);
+        background-color: #1c7c5c;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        z-index: 1000;
+        animation: slideIn 0.3s ease-in-out;
+    }
+
+    .menuLink{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    .fecharMenu{
+        background: none;
+        border: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        cursor: pointer;
+        text-align: left;
+        padding: 0;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+}
+
+@media(max-width: 400px){
+    .header .imgLogo{
+        max-width: 57px;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        padding: 0 12px;
+    }
+
+    .nav{
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px 8px;
+    }
+
+    .nav .Link{
+        font-size: 16px;
+        padding: 4px 8px;
+    }
 }
