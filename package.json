@@ -5,5 +5,11 @@
     "dev": "cd vite-project && npm run dev",
     "build": "cd vite-project && npm run build",
     "preview": "cd vite-project && npm run preview"
+  },
+  "dependencies": {
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.97.3"
   }
 }
