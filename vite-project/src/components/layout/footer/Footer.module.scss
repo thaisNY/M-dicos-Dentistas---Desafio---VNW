@@ -1,0 +1,193 @@
+.footer{
+    background-color: #0B0B0B;
+    height: 325px;
+    font-style: 'Inter', sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+    .container{
+        flex: 5;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        gap : 120px;
+        padding-top: 40px;
+
+        .imgContainerMaior{
+            max-height: 70px;
+            max-width: 232px;
+            width: 100%;
+            height: 100%;
+           
+        
+
+            .imgContainerMenor{
+                max-height: 70px;
+                max-width: 232px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                .imgLogo{
+                    max-width: 40px;
+                    max-height: 40px;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .title{
+                    
+                    font-family: 'Inter', sans-serif;
+                    font-style: bold;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+            
+            .sobre{
+                padding-left: 10px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+            }
+
+        }
+        
+        .contato{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+            .contatoTitle{
+                font-weight: 700;
+                font-size: 16px;
+                color: #fff; 
+            }
+
+            .contatoList{
+                list-style: none;
+                padding-left: 0;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #fff; 
+                }
+            }
+        }
+
+        .redeSocial{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .redeSocialTitle{
+                font-weight: 700;
+                font-size: 16px;
+                color: #fff; 
+            }
+
+            .redeSocialList{
+                list-style: none;
+                padding-left: 0;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                li{
+                    a{
+                        text-decoration: none;
+                        color: #fff; 
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+       
+       
+    }
+
+    .direitos{
+        flex: 1;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff; 
+    }
+
+    
+
+}
+
+// Media query responsivo - telas menores que 768px
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-top: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contatoTitle{
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #fff; 
+        }
+
+        .contatoList {
+            align-items: center;
+
+            li {
+                justify-content: center;
+            }
+        }
+
+
+        .imgContainerMaior,
+        .contato,
+        .redeSocial {
+            text-align: center;
+        }
+
+        .imgContainerMenor {
+            gap: 16px;
+        }
+
+        .sobre {
+            margin-top: 15px;
+        }
+
+        .redeSocial {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .direitos {
+            margin-top: 45px;
+        }
+    }
+}
