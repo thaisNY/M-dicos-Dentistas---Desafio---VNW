@@ -1,0 +1,22 @@
+.btn {
+    width: 14.14rem;
+    height: 3.93rem;
+    border-radius: 11.17px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22.8px;
+    border: none;
+    cursor: pointer;
+
+    /* O '&' diz: "Quando o botão TIVER também essa classe..." */
+    &.btn-green {
+        background-color: #00745A;
+        color: #FFFFFF;
+    }
+
+    &.btn-white {
+        background-color: #FFFFFF;
+        color: #00745A;
+        border: 2px solid #00745A; /* Adicionei a grossura e o estilo da borda */
+    }
+}
