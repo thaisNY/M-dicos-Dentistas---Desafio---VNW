@@ -1,4 +1,4 @@
-import HeroSection from '../components/home/HeroSection'
+import HeroSection from '../components/home/HeroSection/HeroSection'
 import Footer from '../components/layout/footer/Footer'
 const Home = () => {
   return (

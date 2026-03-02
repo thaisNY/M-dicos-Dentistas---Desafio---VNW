@@ -5,6 +5,7 @@ import s from './Header.module.scss'
 import { useEffect, useState } from "react"
 import { RxHamburgerMenu } from "react-icons/rx";
 
+
 const Header = () => {
 
   const [menuAberto, setMenuAberto] = useState(false);
@@ -54,11 +55,12 @@ const Header = () => {
               <p className={s.menuLink}>Home</p>
             </Link>
             <Link to="/voluntario" onClick={() => setMenuAberto(false)}>
-              <p className={s.menuLink}>Seja Voluntário</p>
+              <p class Name={s.menuLink}>Seja Voluntário</p>
             </Link>
             <button className={s.fecharMenu} onClick={() => setMenuAberto(false)}>Sair</button>
           </nav>
         )}
+       
       </header>
     </>
   )
