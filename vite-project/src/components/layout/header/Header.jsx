@@ -3,6 +3,7 @@ import { Link} from "react-router-dom"
 import Button from '../../ui/button/Button'  //estudar isso
 import s from './Header.module.scss'
 import { useEffect, useState } from "react"
+import { RxHamburgerMenu } from "react-icons/rx";
 
 
 const Header = () => {
@@ -29,18 +30,36 @@ const Header = () => {
           <p className={s.title}>Médicos & Dentistas</p>
         </div>
         
-        <div className={s.navLinks}>
-          <nav>
-            <Link  to="/">
-              <p className={s.homelink} >Home</p>
+        {!isMobile && (
+          <div className={s.navLinks}>
+            <nav className={s.nav}>
+              <Link to="/">
+                <p className={s.homelink}>Home</p>
+              </Link>
+              <Link to="/voluntario">
+                <Button content="Seja Voluntário" variant="btn-green" />
+              </Link>
+            </nav>
+          </div>
+        )}
+
+        {isMobile && (
+          <button className={s.hamburgerBtn} onClick={() => setMenuAberto(!menuAberto)}>
+            <RxHamburgerMenu size={24} />
+          </button>
+        )}
+
+        {menuAberto && (
+          <nav className={s.mobileMenu}>
+            <Link to="/" onClick={() => setMenuAberto(false)}>
+              <p className={s.menuLink}>Home</p>
             </Link>
-          
-            <Link  to="/voluntario">
-              <Button content="Seja Voluntário" variant="btn-green" />
+            <Link to="/voluntario" onClick={() => setMenuAberto(false)}>
+              <p class Name={s.menuLink}>Seja Voluntário</p>
             </Link>
+            <button className={s.fecharMenu} onClick={() => setMenuAberto(false)}>Sair</button>
           </nav>
-          
-        </div>
+        )}
        
       </header>
     </>

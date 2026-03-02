@@ -34,6 +34,12 @@
         gap: 40px;
     }
 
+    .nav{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
     .homelink{
         display: inline-block;
         font-family: 'Inter', sans-serif;
@@ -44,4 +50,58 @@
        
     }
 
+    .hamburgerBtn{
+        display: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: #000000;
+    }
+
+    .mobileMenu{
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 220px;
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        z-index: 10;
+    }
+
+    .menuLink{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .fecharMenu{
+        background: transparent;
+        border: 1px solid #000000;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+    }
+
+}
+
+@media (max-width: 768px){
+    .header{
+        .navLinks{
+            display: none;
+        }
+
+        .hamburgerBtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
