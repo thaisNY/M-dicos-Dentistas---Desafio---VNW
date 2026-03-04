@@ -1,0 +1,36 @@
+.benefitsSection {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 60px 80px; // mais espaço lateral
+    gap: 20px;
+    align-items: center; // centraliza tudo
+
+
+    .titleBenefits{
+        font-size: 3rem;
+        color: #000000;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        max-width: 1400px; // Alinha com o limite dos cards
+       
+       
+    }
+
+    .subtitleBenefits{
+        font-size: 1.2rem;
+        color: #000;
+        font-family: 'Inter', sans-serif;
+        max-width: 700px;
+        
+    }
+
+    .cardsContainer{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+        margin-top: 40px;
+    }
+}

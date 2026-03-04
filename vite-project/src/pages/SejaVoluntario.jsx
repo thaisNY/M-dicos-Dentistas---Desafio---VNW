@@ -1,9 +1,9 @@
-
+import BenefitsSection from '../components/volunteer/benefits/BenefitsSection'
 
 const SejaVoluntario = () => {
   return (
     <main>
-      <h1>Seja Voluntário</h1>
+      <BenefitsSection />
     </main>
   )
 }
