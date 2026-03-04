@@ -1,7 +1,5 @@
-.card-white {
-    
+%card-base {
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
     max-width: 380px;
     width: 100%;
     padding: 46px 24px;
@@ -10,22 +8,47 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: transparent; // na imagem parece fundo igual à section
+    background-color: transparent;
     min-height: 130px;
 
     .title {
         font-family: 'Inter', sans-serif;
         font-weight: 700;
-        font-size: 1.875rem;
-        color: #FFFFFF;
-        margin-bottom: 15px; // Espaço entre título e texto
+        margin-bottom: 15px;
     }
 
     .description {
         font-family: 'Inter', sans-serif;
         font-weight: 400;
         font-size: 1.125rem;
+        line-height: 1.4;
+    }
+}
+
+.card-white {
+    @extend %card-base;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    .title {
+        font-size: 1.875rem;
         color: #FFFFFF;
-        line-height: 1.4;   // Melhora a leitura
+    }
+
+    .description {
+        color: #FFFFFF;
+    }
+}
+
+.card-impact {
+    @extend %card-base;
+    border: 1px solid #000000;
+
+    .title {
+        font-size: 3.125rem;
+        color: #00745A;
+    }
+
+    .description {
+        color: #000000;
     }
 }
