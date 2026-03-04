@@ -1,0 +1,64 @@
+.mission{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // <-- não centraliza tudo
+    background-color: #00745A;
+    padding: 60px 80px; // mais espaço lateral
+    gap: 20px;
+
+    .titleMission{
+        font-size: 3rem;
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        max-width: 1400px; // Alinha com o limite dos cards
+        text-align: left;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        color: #E6F4F1;
+        font-family: 'Inter', sans-serif;
+        max-width: 700px;
+    }
+
+    .cardsContainer{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .mission {
+    padding: 60px 20px;
+    align-items: center; // centraliza tudo no mobile
+    text-align: center;
+  }
+
+  .titleMission {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .cardsContainer {
+    flex-direction: column; // um card por linha
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+  }
+
+}
