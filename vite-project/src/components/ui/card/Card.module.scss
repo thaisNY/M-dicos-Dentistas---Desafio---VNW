@@ -52,3 +52,18 @@
         color: #000000;
     }
 }
+
+.card-volunteer {
+    @extend %card-base;
+    border: 1px solid #000000;
+    padding: 56px 12px;
+
+    .title {
+        font-size: 1.875rem;
+        color: #000000;
+    }
+
+    .description {
+        color: #000000;
+    }
+}
