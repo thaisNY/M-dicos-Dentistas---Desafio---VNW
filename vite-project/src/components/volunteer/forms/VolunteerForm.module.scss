@@ -1,0 +1,78 @@
+.volunteerForm {
+  background-color: #006b52; // O verde escuro do fundo da imagem
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+
+  :global(.form) {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 850px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #000;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      legend {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #333;
+      }
+    }
+
+    :global(.input-row) {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+
+      & > div {
+        flex: 1; // Faz os inputs ocuparem 50% cada
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0; // O margin-bottom do wrapper já cuida do espaço
+      }
+    }
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+
+  legend {
+    font-weight: 400 !important;
+    font-size: 0.9rem !important;
+    color: #555 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  button {
+    padding: 12px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

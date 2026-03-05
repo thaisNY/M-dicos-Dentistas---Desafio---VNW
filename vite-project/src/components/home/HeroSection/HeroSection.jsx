@@ -12,7 +12,7 @@ const HeroSection = () => {
           <h1>Saúde e cuidado sem barreiras</h1>
           <p>Um projeto dedicado a oferecer atendimento médico e odontológico gratuito para pessoas que mais precisam na nossa comunidade.</p>
           <div className="hero-buttons">
-            <Button content="Seja Voluntário" variant="btn-green" />
+            <Button content="Seja Voluntário" variant="btn-green" link="/voluntario" />
             <Button content="Como Ajudar" variant="btn-white" />
           </div>
         </div>
