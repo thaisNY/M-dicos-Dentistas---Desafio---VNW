@@ -1,0 +1,41 @@
+.input-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0 20px; // Padding lateral
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.1rem; // Texto interno maior
+  transition: 0.3s;
+
+  &:focus {
+    border-color: #007f61;
+    background-color: #fff;
+  }
+
+  // VARIANTES DE TAMANHO (ALTURA DA ÁREA DE TEXTO)
+  
+  // 1. Variante Pequena (Ex: Nome/Email)
+  &.input-small {
+    height: 55px; 
+  }
+
+  // 2. Variante Média/Full (Ex: Telefone ou Assunto)
+  &.input-full {
+    height: 75px; // Bem mais alto que o padrão
+  }
+
+  // 3. Variante Multiline (Mensagem)
+  &.input-multiline {
+    height: auto;
+    min-height: 250px; // Uma caixa de texto bem grande
+    padding: 20px;    // Padding em todos os lados para o texto não grudar
+    resize: vertical;
+  }
+}
