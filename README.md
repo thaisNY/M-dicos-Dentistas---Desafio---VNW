@@ -8,8 +8,8 @@ O projeto **Médicos & Dentistas** é uma plataforma voltada para o setor de sa�
 
 ## 📺 Demonstração e Deploy
 
-  * **Vídeo de Demonstração**: [Assistir no YouTube](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3DFj-P6O9G3nI)
-  * **Link do Projeto (Deploy)**: [Vite Project](https://www.google.com/search?q=https://vite-project-six-flame.vercel.app/)
+  * **Vídeo de Demonstração**: [Assistir no YouTube](https://www.youtube.com/watch?v=WBPM1QjOVIc)
+  * **Link do Projeto (Deploy)**: [Vite Project](https://m-dicos-dentistas-desafio-vnw.vercel.app/)
 
 -----
 
